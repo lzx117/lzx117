@@ -1,8 +1,8 @@
 <template>
   <header class="app-header">
     <div class="header-container">
-      <!-- Logo区域 - 改为图片 -->
-      <div class="logo">
+      <!-- Logo区域 -->
+      <div class="logo" @click="goHome">
         <img src="@/assets/images/hero/logo.png" alt="Articler Logo" class="logo-image" />
       </div>
 
@@ -27,14 +27,24 @@
       <!-- 右侧操作区 -->
       <div class="header-actions">
         <el-button icon="Search" circle class="search-btn" />
-        <el-button class="control-btn" type="warning">控制台</el-button>
+        <el-button class="control-btn" type="warning" @click="handleConsoleClick">控制台</el-button>
       </div>
     </div>
   </header>
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
+import { ElMessage } from 'element-plus'
+
+const handleConsoleClick = () => {
+  ElMessage.error('您没有权限访问控制台 🔒')
+}
+
+const router = useRouter()
+const goHome = () => {
+  router.push('/')
+}
 
 const route = useRoute()
 </script>

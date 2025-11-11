@@ -1,44 +1,54 @@
-# personal-website
+# 📝 个人网站系统项目简介撰写完成！
 
-This template should help get you started developing with Vue 3 in Vite.
+## Vue 3响应式个人网站系统
 
-## Recommended IDE Setup
+**📌 项目标签**
+`Vue 3` `Element Plus` `PHP` `MySQL` `全栈开发` `响应式设计`
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+**🏆 项目成果**
+个人作品集项目 | 2024-2025年
 
-## Recommended Browser Setup
+**📝 项目简介**
+基于Vue 3 Composition API开发的现代化个人网站系统，采用前后端分离架构，展示个人技能、项目经历、获奖荣誉等内容。项目采用紫蓝渐变配色方案，注重用户体验与视觉设计，实现了完整的响应式布局，适配PC端、平板和移动端多种设备。后端使用PHP原生开发RESTful API，数据库采用MySQL 8.0存储用户数据与内容管理。
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+**💡 核心亮点**
 
-## Customize configuration
+- 采用**Vue 3 Composition API + `<script setup>`**语法糖，代码更简洁高效
+- 使用**Element Plus**构建统一UI风格，提供优质的交互体验
+- 实现**Pinia状态管理**，统一管理全局数据流
+- 模块化组件设计：Hero区、技能展示、奖项展示、项目展示等独立组件
+- **响应式布局**：移动端适配断点为768px，自动调整卡片布局与字体大小
+- 紫蓝渐变色系设计风格（#667eea - #764ba2），现代简约美观
+- 图片懒加载与占位符优化，提升页面加载性能
+- 卡片悬停动效与平滑过渡动画，增强视觉反馈
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+**🛠️ 技术栈**
 
-## Project Setup
+- **前端**：Vue 3 · Element Plus · Pinia · Vite · JavaScript
+- **后端**：PHP · RESTful API
+- **数据库**：MySQL 8.0
+- **构建工具**：Vite
+- **样式方案**：Scoped CSS + Element Plus主题定制
 
-```sh
-npm install
-```
+**📊 项目规模**
 
-### Compile and Hot-Reload for Development
+- 5+核心页面组件
+- 10+可复用业务组件
+- 响应式适配3种屏幕尺寸
+- API接口20+条
 
-```sh
-npm run dev
-```
+**🎨 设计特色**
 
-### Compile and Minify for Production
+- **导航栏**：固定顶部导航，支持页面锚点平滑滚动
+- **Hero区**：全屏渐变背景 + 个人介绍卡片 + CTA按钮
+- **技能展示**：6大技能分类标签 + 左右分栏布局 + 动态内容切换
+- **奖项模块**：时间线式卡片展示 + 获奖等级标签
+- **项目展示**：项目卡片网格 + 技术栈标签 + 详情展开动画
 
-```sh
-npm run build
-```
+**🚀 项目亮点**
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. **前后端分离架构**：Vue 3前端 + PHP API后端，职责清晰
+2. **组件化开发**：高内聚低耦合的组件设计，便于维护扩展
+3. **工程化规范**：统一的代码风格、目录结构、命名规范
+4. **性能优化**：懒加载、防抖节流、虚拟滚动等优化手段
+5. **SEO友好**：语义化HTML标签，合理的meta信息配置

@@ -53,7 +53,7 @@ export const useProjectsStore = defineStore('projects', () => {
       ],
       award: '2025年数学建模E题国家二等奖',
       markdownPath: '/markdown/1、2025E基于重心估算与集成学习的跳远解析及预测模型.md',
-      pdfUrl: '/files/2025E基于重心估算与集成学习的跳远解析及预测模型.pdf',
+      githubUrl: 'https://github.com/lzx117/2025E-Long-Jump-Prediction',
       featured: true, // 是否在首页展示
     },
     {
@@ -77,7 +77,7 @@ export const useProjectsStore = defineStore('projects', () => {
       ],
       award: null,
       markdownPath: '/markdown/2、个人网站.md',
-      pdfUrl: '无',
+      githubUrl: 'https://github.com/lzx117/',
       featured: true,
     },
     {
@@ -97,7 +97,7 @@ export const useProjectsStore = defineStore('projects', () => {
       highlights: ['车流通行率提升26%', '平均车速提升55%（18→28 km/h）', '平均等待时间降低40%'],
       award: '2024年数学建模E题省级二等奖',
       markdownPath: '/markdown/3、2024E基于车流量下信号灯优化模型的交通流量管控.md',
-      pdfUrl: '/files/2024E基于车流量下信号灯优化模型的交通流量管控.pdf',
+      githubUrl: 'https://github.com/lzx117/2024E-Traffic-Signal-Optimization',
       featured: true,
     },
     {
@@ -121,7 +121,7 @@ export const useProjectsStore = defineStore('projects', () => {
       ],
       award: null,
       markdownPath: '/markdown/4、2023E基于最小二乘法分段拟合的黄河水沙监测数据分析.md',
-      pdfUrl: '/files/2023E基于最小二乘法分段拟合的黄河水沙监测数据分析.pdf',
+      githubUrl: 'https://github.com/lzx117/2023E-Yellow-River-Sediment-Analysis',
       featured: false,
     },
     {
@@ -141,7 +141,7 @@ export const useProjectsStore = defineStore('projects', () => {
       highlights: ['建立最短路径模型', '考虑多种约束条件', '提出分层传输策略'],
       award: null,
       markdownPath: '/markdown/5、2022D气象卫星信息报文传输最优方案研究.md',
-      pdfUrl: '/files/2022D气象卫星信息报文传输最优方案研究.pdf',
+      githubUrl: 'https://github.com/lzx117/2022D-Satellite-Data-Transmission-Optimization',
       featured: false,
     },
     {
@@ -161,7 +161,7 @@ export const useProjectsStore = defineStore('projects', () => {
       highlights: ['建立空间优化模型', '考虑动物行为特征', '提出分区管理方案'],
       award: null,
       markdownPath: '/markdown/6、2023D基于动态规划模型下圈养湖羊的最优空间利用率.md',
-      pdfUrl: '/files/2023D基于动态规划模型下圈养湖羊的最优空间利用率.md',
+      githubUrl: 'https://github.com/lzx117/2023D-Lake-Sheep-Space-Optimization',
       featured: false,
     },
   ])

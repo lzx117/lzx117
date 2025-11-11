@@ -71,23 +71,22 @@
         <div class="markdown-body" v-html="htmlContent"></div>
       </div>
 
-      <!-- PDF 下载区 -->
+      <!-- PDF 跳转区 -->
       <div class="download-section">
         <h3>📄 项目文档</h3>
         <el-button
           type="primary"
           size="large"
           class="download-btn"
-          @click="handleDownload"
-          :loading="downloading"
-          :disabled="!projectData.pdfUrl || projectData.pdfUrl === '无'"
+          @click="handleGithubRedirect"
+          :disabled="!projectData.githubUrl"
         >
           <el-icon>
-            <Download />
+            <Link />
           </el-icon>
-          下载项目完整文档 (PDF)
+          查看 GitHub 仓库
         </el-button>
-        <p class="download-tip">* PDF下载功能将在后端开发完成后启用</p>
+        <p class="download-tip">* 点击跳转到项目的 GitHub 仓库页面</p>
       </div>
     </div>
 
@@ -118,7 +117,7 @@ import { marked } from 'marked'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github.css'
 import { ElMessage } from 'element-plus'
-import { Loading, Download, Trophy, Top } from '@element-plus/icons-vue'
+import { Loading, Link, Trophy, Top } from '@element-plus/icons-vue'
 import { useProjectsStore } from '@/stores/projects'
 import { usePageTitle } from '@/composables/usePageTitle'
 import AppHeader from '@/components/Header/AppHeader.vue'
@@ -130,7 +129,7 @@ const projectsStore = useProjectsStore()
 
 // 状态管理
 const loading = ref(true)
-const downloading = ref(false)
+// const downloading = ref(false)
 const htmlContent = ref('')
 const projectData = ref(null)
 
@@ -200,9 +199,13 @@ const loadProjectData = async () => {
   }
 }
 
-// PDF下载功能（占位）
-const handleDownload = () => {
-  ElMessage.info('PDF下载功能将在后端开发完成后启用')
+// GitHub跳转功能
+const handleGithubRedirect = () => {
+  if (projectData.value.githubUrl) {
+    window.open(projectData.value.githubUrl, '_blank')
+  } else {
+    ElMessage.warning('该项目暂无GitHub仓库链接')
+  }
 }
 
 // 组件挂载时加载数据
