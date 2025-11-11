@@ -262,7 +262,7 @@ const submitMessage = async () => {
     resetForm()
   } catch (error) {
     if (error !== false) {
-      ElMessage.error('留言发送失败，请稍后重试')
+      ElMessage.error('留言功能正在开发中，请通过邮件或者微信的方式联系我，谢谢理解！')
     }
   } finally {
     submitting.value = false
